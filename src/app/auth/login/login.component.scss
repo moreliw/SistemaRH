@@ -1,0 +1,126 @@
+* {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f5ff;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.esquerda {
+  flex: 1;
+  background: linear-gradient(180deg, #1e90ff, #0a60ff);
+  color: white;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.esquerda h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.esquerda p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.esquerda button {
+  padding: 10px 20px;
+  background-color: white;
+  color: #1e90ff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.direita {
+  flex: 1;
+  background-color: white;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.direita h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.direita p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+form input {
+  width: 55%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form input[type="senha"] {
+  -webkit-text-security: disc; /* Para ocultar caracteres como senha */
+}
+
+.login-btn {
+  width: 25%;
+  padding: 10px;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-btn:hover {
+  background-color: #0a60ff;
+}
+
+.esqueci-senha {
+  margin-top: 20px;
+  color: #1e90ff;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.esqueci-senha:hover {
+  text-decoration: underline;
+}
+
+.imput-content {
+  position: relative;
+}
+
