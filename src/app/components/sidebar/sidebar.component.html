@@ -1,0 +1,36 @@
+<div class="wrapper">
+  <aside id="sidebar" (click)="toggle()">
+    <div class="d-flex">
+      <button class="toggle-btn" type="button">
+        <i class="material-symbols-outlined"> dashboard</i>
+      </button>
+      <div class="sidebar-logo">
+        <a>Sistema RH </a>
+      </div>
+    </div>
+    <ul class="sidebar-nav">
+      <div>
+        <li class="sidebar-item" (click)="goTo('/collaborators', $event)">
+          <a class="sidebar-link">
+            <i class="material-symbols-outlined">groups</i>
+            <span>Colaboradores</span>
+          </a>
+        </li>
+
+        <li class="sidebar-item">
+          <a class="sidebar-link">
+            <i class="material-symbols-outlined">work</i>
+            <span>Cargos</span>
+          </a>
+        </li>
+      </div>
+    </ul>
+
+    <div class="sidebar-footer">
+      <a class="sidebar-link">
+        <i class="material-symbols-outlined"> logout</i>
+        <span>Sair</span>
+      </a>
+    </div>
+  </aside>
+</div>

@@ -1,0 +1,26 @@
+<div>
+  <p>{{ title + " Colaborador" }}</p>
+  <button (click)="goBack()">Voltar</button>
+</div>
+
+<div>
+  <form [formGroup]="formValue" class="form-validate">
+    <label>Nome</label>
+    <input class="form-control" type="text" formControlName="name" />
+    <span
+      class="text-danger"
+      *ngIf="
+        formValue.controls['name'].hasError('required') &&
+        (formValue.controls['name'].dirty || formValue.controls['name'].touched)
+      "
+    ></span>
+
+    <label>Cargo</label>
+    <input class="form-control" type="text" formControlName="position" />
+
+    <label>Data de admissão</label>
+    <input class="form-control" type="date" formControlName="startDate" />
+  </form>
+
+  <button (click)="submit()">Enviar</button>
+</div>

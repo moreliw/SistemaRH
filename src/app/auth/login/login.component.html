@@ -1,3 +1,17 @@
 <p>login works!</p>
 <h2>Teste login page</h2>
 <button (click)="goToPosition()">Ir para cargos</button>
+<a
+  *ngIf="visibility"
+  class="material-symbols-outlined button-visible"
+  (click)="changeVisibility()"
+>
+  visibility
+</a>
+<a
+  *ngIf="!visibility"
+  class="material-symbols-outlined button-visible"
+  (click)="changeVisibility()"
+>
+  visibility
+</a>

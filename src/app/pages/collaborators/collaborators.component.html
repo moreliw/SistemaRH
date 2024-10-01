@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="d-flex up-style">
+    <h2>Colaboradores</h2>
+    <button class="add-button" (click)="newCollaborator()">
+      + Novo colaborador
+    </button>
+  </div>
+
+  <div class="back-table">
+    <table class="styled-table">
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th class="text-left">Nome</th>
+          <th class="text-left">Cargo</th>
+          <th class="text-center">Data admissão</th>
+          <th class="text-right"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td class="text-left">Patrão</td>
+          <td class="text-left">CEO</td>
+          <td class="text-center">01/10/2024</td>
+          <td class="text-right">
+            <a class="material-symbols-outlined" (click)="editCollaborator(1)"
+              >edit_square</a
+            >
+            <a class="material-symbols-outlined">delete</a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td class="text-left">Lekin</td>
+          <td class="text-left">Diretor</td>
+          <td class="text-center">01/09/2024</td>
+          <td class="text-right">
+            <a class="material-symbols-outlined" (click)="editCollaborator(2)"
+              >edit_square</a
+            >
+            <a class="material-symbols-outlined">delete</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
